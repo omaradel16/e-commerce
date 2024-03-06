@@ -5,9 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-commerce</title>
     <link rel="stylesheet" href="style.css">
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+            integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
 </head>
 
 <body>
+
+<!--=================== header  ======================================================-->
+        <!-- MOBILE SCREEN -->
+        <input type="checkbox" id="menu">
+        <!-- END MOBILE SCREEN -->
+    
+        <header>
+            
+            <div class="logo">
+                <h1>Te<span>ch</span></h1>
+            </div>
+    
+            <div class="navItem" id="search-box">
+                <input type="text" placeholder="Search..." class="search-input" />
+                <div class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass" id="search-icon"></i>
+                </div>
+            </div>
+            <!-- MOBILE SCREEN -->
+            <label id="hamburgermenu" for="menu">
+                <div></div>
+                <div></div>
+                <div></div>
+            </label>
+            <!-- END MOBILE SCREEN -->
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#products">products</a>
+                <a href="#cart">cart</a>
+            </nav>
+        </header>
+
+<!--=================== products  ======================================================-->
 
     <div class="slider-container">
         <h3 class="product-slider-heading">Products</h3>
@@ -67,7 +107,7 @@
                     </div>
 
                     <a href="#" class="product-title">
-                        SSAMSUNG Galaxy Buds Pro 2
+                        SAMSUNG Galaxy Buds Pro 2
                     </a>
 
                     <div class="price-buy">
