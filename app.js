@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
           const slider = document.querySelector('.product-slider');
           const totalSlides = document.querySelectorAll('.product-box').length;
           index = (index + totalSlides) % totalSlides; 
-          const translateValue = -index * 72 + 'vw';
+          const translateValue = -index * 74 + 'vw';
           slider.style.transform = `translateX(${translateValue})`;
           currentIndex = index;
       }

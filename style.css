@@ -46,6 +46,7 @@ header {
 
 #search-box {
   max-width: 400px;
+  min-width: 180px;
   background-color: white;
   padding: 2px;
   border-radius: 20px;
@@ -125,7 +126,8 @@ nav a {
   transition: 0.3s;
 }
 nav a:hover {
-  color: #312ECB;
+  /* color: #312ECB; */
+  color: #007AFF;
   background-color: rgba(255, 255, 255, 0.51);
 }
 
@@ -208,6 +210,7 @@ nav a:hover {
   transition: transform 0.5s ease-in-out;
   width: 500vw;
   padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .product-slider-heading{
@@ -265,7 +268,7 @@ display: flex;
 }
 
 .product-category span{
-  color: #acacac; 
+  color: #a0a0a0; 
   font-size: 0.9rem;
   margin: 5px 0px;
 }
@@ -328,12 +331,46 @@ font-weight: 600;
 }
 
 .prev {
-  left: 10px;
+  left: 5px;
 }
 
 .next {
-  right: 10px;
+  right: 5px;
 }
+
+.next::before {
+  content: 'Next';
+  font-size: 7px;
+  position: absolute;
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  display: none;
+  pointer-events: none;
+  bottom: -20px; 
+  left: 50%;
+  transform: translateX(-50%);
+}
+.prev::before {
+  content: 'previous';
+  font-size: 7px;
+  position: absolute;
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  display: none;
+  pointer-events: none;
+  bottom: -20px; 
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.next:hover::before, .prev:hover::before {
+  display: block;
+}
+
 @media (max-width: 768px) {
   .prev, .next {
       font-size: 14px;
